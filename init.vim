@@ -5,6 +5,7 @@ Plug 'ncm2/ncm2'
 " install framework API that jedi-neovim uses
 if has('nvim')
   Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+  Plug 'scrooloose/nerdtree', { 'do': ':UpdateRemotePlugins' }
 else
   Plug 'Shougo/deoplete.nvim'
   Plug 'roxma/nvim-yarp'
