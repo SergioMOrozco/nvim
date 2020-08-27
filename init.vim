@@ -1,4 +1,8 @@
+source $HOME/.config/nvim/plug-config/sneak.vim
+source $HOME/.config/nvim/plug-config/floaterm.vim
+
 call plug#begin('~/.local/share/nvim/plugged')
+
 
 Plug 'ncm2/ncm2'
 
@@ -6,6 +10,9 @@ Plug 'ncm2/ncm2'
 if has('nvim')
   Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
   Plug 'scrooloose/nerdtree', { 'do': ':UpdateRemotePlugins' }
+  Plug 'iamcco/markdown-preview.nvim', { 'do': ':call mkdp#util#install()', 'for': 'markdown' }
+  Plug 'justinmk/vim-sneak'
+  Plug 'voldikss/vim-floaterm'
 else
   Plug 'Shougo/deoplete.nvim'
   Plug 'roxma/nvim-yarp'
@@ -17,6 +24,8 @@ Plug 'zchee/deoplete-jedi'
 Plug 'drewtempelmeyer/palenight.vim'
 
 call plug#end()
+
+let mapleader = " "
 
 let g:deoplete#enable_at_startup = 1
 
@@ -39,5 +48,28 @@ if (has("termguicolors"))
   set termguicolors
 endif
 
-"------------------------end palenight-----------------------
 let g:palenight_terminal_italics=1
+
+"------------------------end palenight-----------------------
+
+let g:mkdp_echo_preview_url = 1
+
+let g:python3_host_prog = '/home/sorozco0612/Programs/anaconda3/bin/python3.7'
+
+
+" Go to tab by number
+noremap <leader>1 1gt
+noremap <leader>2 2gt
+noremap <leader>3 3gt
+noremap <leader>4 4gt
+noremap <leader>5 5gt
+noremap <leader>6 6gt
+noremap <leader>7 7gt
+noremap <leader>8 8gt
+noremap <leader>9 9gt
+noremap <leader>0 :tablast<cr>
+noremap <leader>n :NERDTreeToggle<cr>
+noremap <leader>t :FloatermToggle<cr>
+noremap <leader>m :MarkdownPreview<cr>
+
+:tnoremap <Esc> <C-\><C-n>
