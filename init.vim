@@ -13,6 +13,7 @@ if has('nvim')
   Plug 'iamcco/markdown-preview.nvim', { 'do': ':call mkdp#util#install()', 'for': 'markdown' }
   Plug 'justinmk/vim-sneak'
   Plug 'voldikss/vim-floaterm'
+  Plug 'takac/vim-hardtime'
 else
   Plug 'Shougo/deoplete.nvim'
   Plug 'roxma/nvim-yarp'
@@ -28,6 +29,7 @@ call plug#end()
 let mapleader = " "
 
 let g:deoplete#enable_at_startup = 1
+let g:hardtime_default_on = 1
 
 
 "------------------------palenight-----------------------
@@ -71,5 +73,13 @@ noremap <leader>0 :tablast<cr>
 noremap <leader>n :NERDTreeToggle<cr>
 noremap <leader>t :FloatermToggle<cr>
 noremap <leader>m :MarkdownPreview<cr>
+
+:set number relativenumber
+
+:augroup numbertoggle
+:  autocmd!
+:  autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
+:  autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
+:augroup END
 
 :tnoremap <Esc> <C-\><C-n>
