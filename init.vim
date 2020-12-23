@@ -9,7 +9,8 @@ Plug 'ncm2/ncm2'
 " install framework API that jedi-neovim uses
 if has('nvim')
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-Plug 'scrooloose/nerdtree', { 'do': ':UpdateRemotePlugins' }
+Plug 'francoiscabrol/ranger.vim'
+Plug 'rbgrouleff/bclose.vim'
 Plug 'iamcco/markdown-preview.nvim', { 'do': ':call mkdp#util#install()', 'for': 'markdown' }
 Plug 'justinmk/vim-sneak'
 Plug 'voldikss/vim-floaterm'
