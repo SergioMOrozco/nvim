@@ -46,4 +46,4 @@ mv plug.vim site/autoload/plug.vim
 
 ## Note
 
-My neovim is configured for python development, so I have referenced where vim should find my python interpreter. You will have to change this
+My neovim is configured for python development, so I have referenced where vim should find my python interpreter. You will have to change this.
