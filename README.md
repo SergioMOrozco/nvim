@@ -35,3 +35,9 @@ git clone https://github.com/FezTheImmigrant/nvim.git
 curl -LO https://github.com/BurntSushi/ripgrep/releases/download/12.1.1/ripgrep_12.1.1_amd64.deb
 sudo dpkg -i ripgrep_12.1.1_amd64.deb
 ```
+
+### CoC
+- I use CoC for autocompletion and python interpreter management. Once installed, you have to install some extensions by running the following in Neovim:
+```
+:CocInstall coc-json coc-python coc-snippets coc-vimlsp
+```
