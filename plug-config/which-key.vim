@@ -24,7 +24,7 @@ autocmd  FileType which_key set laststatus=0 noshowmode noruler
 
 " Single mappings
 let g:which_key_map['/'] = [ '<Plug>NERDCommenterToggle'  , 'comment' ]
-let g:which_key_map['b'] = [ ':Black'                     , 'format file' ]
+let g:which_key_map['f'] = [ ':Black'                     , 'format file' ]
 
 let g:which_key_map['g'] = {
                   \'name': '+git',
