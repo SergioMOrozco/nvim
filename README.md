@@ -24,26 +24,14 @@ git clone https://github.com/FezTheImmigrant/nvim.git
 
 ### Plugin Manager
 
-- I use vim-plug as my plugin manager, so you'll need to install it.
+- I use vim-plug as my plugin manager, which is install by default when you open nvim.
+
+
+### RipGrep
+
+- I use RipGrep which is a nice plugin for finding words in files, but it has to be install on your system doing the following for debian machines:
 
 ```
-curl -fLo ~/.local/share/nvim/plug.vim --create-dirs     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+curl -LO https://github.com/BurntSushi/ripgrep/releases/download/12.1.1/ripgrep_12.1.1_amd64.deb
+sudo dpkg -i ripgrep_12.1.1_amd64.deb
 ```
-
-- if you ***cd*** into ~/.local/share/nvim , you'll find a ***plug.vim*** file. We are going to move it.
-
-```
-cd ~/.local/share/nvim
-mkdir site
-mkdir site/autoload
-mv plug.vim site/autoload/plug.vim
-```
-### Install Plugins
-
-- Finally you should open up neovim and type:
-	- :PlugInstall
-
-
-## Note
-
-My neovim is configured for python development, so I have referenced where vim should find my python interpreter. You will have to change this.
