@@ -34,6 +34,22 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " makes sure fuzzy finder only check git repo
     Plug 'airblade/vim-rooter'
 
+    " for start screen
+    Plug 'mhinz/vim-startify'
+
+    " Git integration
+    Plug 'mhinz/vim-signify'
+    Plug 'tpope/vim-fugitive'
+    Plug 'tpope/vim-rhubarb' " used for GRemove and GBrowse
+    Plug 'junegunn/gv.vim'
+
+    Plug 'justinmk/vim-sneak'
+
+    " makes searching with 'f' and 't' quicker
+    Plug 'unblevable/quick-scope'
+
+    Plug 'liuchengxu/vim-which-key'
+
 call plug#end()
 
 " Automatically install missing plugins on startup
