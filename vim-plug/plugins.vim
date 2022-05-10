@@ -9,35 +9,34 @@ endif
 call plug#begin('~/.config/nvim/autoload/plugged')
 
     " Better Syntax Support
-    Plug 'sheerun/vim-polyglot'
+    "Plug 'sheerun/vim-polyglot'
     " File Explorer
     Plug 'scrooloose/NERDTree'
-    " Auto pairs for '(' '[' '{'
+    "" Auto pairs for '(' '[' '{'
     Plug 'jiangmiao/auto-pairs'
 
-    " Color Scheme
+    "" Color Scheme
     Plug 'joshdick/onedark.vim'
-    
-    " Stable version of coc
+    "" Stable version of coc
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
-    " formatter for python since CoC sucks at it
-    Plug 'python/black'
+    "" formatter for python since CoC sucks at it
+    "Plug 'python/black'
 
     Plug 'vim-airline/vim-airline'
     Plug 'vim-airline/vim-airline-themes'
 
-    "Fuzzy finder
+    ""Fuzzy finder
     Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
     Plug 'junegunn/fzf.vim'
 
-    " makes sure fuzzy finder only check git repo
-    Plug 'airblade/vim-rooter'
+    """ makes sure fuzzy finder only check git repo
+    ""Plug 'airblade/vim-rooter'
 
-    " for start screen
+    """ for start screen
     Plug 'mhinz/vim-startify'
 
-    " Git integration
+    """ Git integration
     Plug 'mhinz/vim-signify'
     Plug 'tpope/vim-fugitive'
     Plug 'tpope/vim-rhubarb' " used for GRemove and GBrowse
@@ -45,10 +44,14 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     Plug 'justinmk/vim-sneak'
 
-    " makes searching with 'f' and 't' quicker
+    "" makes searching with 'f' and 't' quicker
     Plug 'unblevable/quick-scope'
 
     Plug 'liuchengxu/vim-which-key'
+
+    Plug 'puremourning/vimspector'
+
+    Plug 'OmniSharp/omnisharp-vim'
 
 call plug#end()
 

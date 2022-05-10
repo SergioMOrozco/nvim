@@ -19,12 +19,8 @@ let g:startify_lists = [
           \ ]
 
 let g:startify_bookmarks = [
-            \ { 'c': '~/.config/i3/config' },
             \ { 'i': '~/.config/nvim/init.vim' },
             \ { 'b': '~/.bashrc' },
-            \ '~/Blog',
-            \ '~/Code',
-            \ '~/Pics',
             \ ]
 
 "Automatically update sessions
