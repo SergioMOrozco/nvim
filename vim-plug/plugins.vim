@@ -17,7 +17,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     "" Color Scheme
     Plug 'joshdick/onedark.vim'
-    "" Stable version of coc
+    " Stable version of coc
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
     "" formatter for python since CoC sucks at it
