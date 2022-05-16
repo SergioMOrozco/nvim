@@ -2,6 +2,7 @@
 if empty(glob('~/.config/nvim/autoload/plug.vim'))
   silent !curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs
     \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
   "autocmd VimEnter * PlugInstall
   "autocmd VimEnter * PlugInstall | source $MYVIMRC
 endif
@@ -49,9 +50,14 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     Plug 'liuchengxu/vim-which-key'
 
+    " Runtime debugging
     Plug 'puremourning/vimspector'
 
+    "Syntax highlighting and code actions for c#
     Plug 'OmniSharp/omnisharp-vim'
+
+    " Code Formatter
+    Plug 'sbdchd/neoformat'
 
 call plug#end()
 
