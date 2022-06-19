@@ -59,6 +59,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Code Formatter
     Plug 'sbdchd/neoformat'
 
+    " semantic highlighting for python
+    Plug 'numirias/semshi', { 'do': ':UpdateRemotePlugins' }
+
 call plug#end()
 
 " Automatically install missing plugins on startup
