@@ -11,7 +11,7 @@ let g:neoformat_enabled_cs= ['clangformat']
 
 let g:neoformat_python_black= {
             \ 'exe': 'black',
-            \ 'stdin': 1
+            \ 'replace': 1
             \ }
 
 let g:neoformat_enabled_python= ['black']
