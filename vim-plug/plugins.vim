@@ -53,6 +53,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Runtime debugging
     Plug 'puremourning/vimspector'
 
+    "Adds highlighting and other actions for C#
+    Plug 'OmniSharp/omnisharp-vim'
+
     " Code Formatter
     Plug 'sbdchd/neoformat'
 

@@ -12,3 +12,4 @@ source $HOME/.config/nvim/plug-config/which-key.vim
 source $HOME/.config/nvim/plug-config/vimspector.vim
 source $HOME/.config/nvim/plug-config/omni_sharp.vim
 source $HOME/.config/nvim/plug-config/neo_format.vim
+source $HOME/.config/nvim/plug-config/omnisharp.vim
