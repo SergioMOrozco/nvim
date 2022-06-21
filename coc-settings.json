@@ -3,11 +3,18 @@
   "coc.preferences.formatOnType": true,
 
   // python config
-  "python.formatting.provider": "black",
-  "python.linting.enabled": true,
-  "python.linting.pylintEnabled": true,
-  "python.venvPath": "~/virtual_envs",
-  "python.jediPath": "~/virtual_envs/neovim/lib/python3.6/site-packages/",
+  //"python.formatting.provider": "black",
+  //"python.linting.enabled": true,
+  //"python.linting.pylintEnabled": true,
+  //"python.venvPath": "~/virtual_envs",
+  //"python.jediPath": "~/virtual_envs/neovim/lib/python3.6/site-packages/",
+  "languageserver": {
+    "csharp-ls": {
+      "command": "csharp-ls",
+        "filetypes": ["cs"],
+        "rootPatterns": ["*.csproj", ".vim/", ".git/", ".hg/"]
+    }
+  },
 
   "snippets.ultisnips.directories":
   [
