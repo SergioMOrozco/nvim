@@ -103,6 +103,22 @@ return packer.startup(function(use)
   use "akinsho/bufferline.nvim" -- show buffers on top
   use "moll/vim-bbye"
 
+  -- install without yarn or npm
+  use({
+      "iamcco/markdown-preview.nvim",
+      run = function() vim.fn["mkdp#util#install"]() end,
+  })
+
+  use({ "iamcco/markdown-preview.nvim", run = "cd app && npm install", setup = function() vim.g.mkdp_filetypes = { "markdown" } end, ft = { "markdown" }, })
+
+  use 'lervag/vimtex'
+
+
+  use {
+  'https://codeberg.org/esensar/nvim-dev-container',
+  requires = { 'nvim-treesitter/nvim-treesitter' }
+}
+
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then
