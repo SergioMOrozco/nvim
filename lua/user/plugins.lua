@@ -113,6 +113,10 @@ return packer.startup(function(use)
 
   use 'lervag/vimtex'
 
+  use 'mfussenegger/nvim-dap'
+  use 'mfussenegger/nvim-dap-python'
+  use { "rcarriga/nvim-dap-ui", requires = {"mfussenegger/nvim-dap"} }
+
 
   use {
   'https://codeberg.org/esensar/nvim-dev-container',

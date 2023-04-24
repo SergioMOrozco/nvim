@@ -74,3 +74,11 @@ keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
 -- keymap("n", "<leader>f", "<cmd>Telescope find_files<cr>", opts)
 keymap("n", "<leader>f", "<cmd>lua require'telescope.builtin'.find_files(require('telescope.themes').get_dropdown({ previewer = false }))<cr>", opts)
 keymap("n", "<leader>g", "<cmd>Telescope live_grep<cr>", opts)
+
+
+keymap("n","<F5>","<cmd>lua require'dap'.continue()<CR>",opts)
+keymap("n","<F10>","<cmd>lua require'dap'.step_over()<CR>",opts)
+keymap("n","<F11>","<cmd>lua require'dap'.step_into()<CR>",opts)
+keymap("n","<F12>","<cmd>lua require'dap'.step_out()<CR>",opts)
+keymap("n","<leader>b","<cmd>lua require'dap'.toggle_breakpoint()<CR>",opts)
+keymap("n","<leader>d","<cmd>lua require'dapui'.open()<CR>",opts)
